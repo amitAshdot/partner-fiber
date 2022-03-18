@@ -7,6 +7,10 @@ margin: auto;
 }
 
 .wrapQues {
+    &-section{
+            position: relative;
+        overflow: visible;
+    }
     padding: 4% 0 4% 0;
     background: #000000;
 }

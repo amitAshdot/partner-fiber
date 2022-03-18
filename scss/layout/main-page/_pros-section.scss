@@ -59,27 +59,27 @@
         position: absolute;
 
         &-top {
-            top: 4rem;
+            top: 4.1rem;
             right: 0;
             width: 42rem;
             z-index: -1;
         }
 
         &-staticSofa {
-            bottom: -6.5rem;
-            // right: 50%;
-            width: 42rem;
-            z-index: 1;
-            transform: translateX(-50%);
+    bottom: -6.5rem;
+    right: 50%;
+    width: 44rem;
+    z-index: 1;
+    transform: translateX(50%);
         }
 
         &-bottom {
 
             &-R {
-                bottom: -1rem;
-                right: 0;
-                width: 43.2rem;
-                z-index: 1;
+    bottom: 1rem;
+    right: 2rem;
+    width: 43rem;
+    z-index: 1;
             }
 
             &-L {
@@ -87,6 +87,10 @@
                 left: 0;
                 z-index: 1;
             }
+        }
+
+        &-wrapQues{
+            bottom: 1rem;
         }
     }
 }
