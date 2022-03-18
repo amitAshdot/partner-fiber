@@ -47,7 +47,7 @@
 
 <body>
     <!-- TOP SECTION START-->
-    <header class="top-section" aria-label="top-section">        
+    <header class="top-section" aria-label="top-section" id="header">        
 
                    <!-- absulote img -->
             <div class="top-floats">
@@ -82,7 +82,7 @@
     </header>
     <!-- TOP SECTION END-->
 <!-- FORM START -->
-    <section class="form-section">
+    <section class="form-section" >
         <form class="form" id="top" action="" method="post" accept-charset="utf-8">
           <input type="hidden" id="token" name="token" value="12345678">
           <!-- nested -->
@@ -91,6 +91,7 @@
           <input name="subSourceId" type="hidden" id="subSourceId" value="" class="originatingleadcode subSourceId">
           <input type="hidden" id="jobId" name="jobId" value="" class="jobId">
           <input name="utm_source" type="hidden" value="" class="utm_source">
+          <input name="withNetflix" type="hidden" value="false" class="utm_source">
           <!-- nested -->
           
           <h2 class="checkBuild">הצטרפו לאינטרנט המהיר של פרטנר</h2>
@@ -213,7 +214,7 @@
                                     <h3 class="speedtxt">Private Fiber במהירות עד</h3>
                                     <h3 class="mb">300<span>Mb</span></h3>
                                     <p class="price">מ-90 ₪ לחודש<span>חודש ראשון ללא תשלום</span></p>
-                                    <a href="#" class="btn" tabindex="0">
+                                    <a href="#header" class="btn" tabindex="0">
                                         <span class="text">‹ להצטרפות</span>
                                     </a>
                                 </div>
@@ -223,7 +224,7 @@
                                     <h3 class="mb">300Mb <span>עד</span></h3>
                                     <p class="plus">+<br>Partner tv<br>כולל ממיר אחד<br>+<img src="https://www.partner.co.il/globalassets/global/privatefiber/images/logoNetflix.png" alt="" title=""></p>
                                     <p class="price"><!--99 ₪ לחודש לחודשיים הראשונים<br />-->מ-₪195 לחודש</p>
-                                    <a class="btn" tabindex="0">
+                                    <a href="#header" class="btn" tabindex="0">
                                         <span class="text">‹ להצטרפות</span>
                                     </a>
                                 </div>
@@ -234,7 +235,7 @@
                                     <h3 class="speedtxt">Private Fiber במהירות עד</h3>
                                     <h3 class="mb">600<span>Mb</span></h3>
                                     <p class="price">מ-100 ₪ לחודש<span>חודש ראשון ללא תשלום</span></p>
-                                    <a class="btn" tabindex="0">
+                                    <a href="#header" class="btn" tabindex="0">
                                         <span class="text">‹ להצטרפות</span>
                                     </a>
                                 </div>
@@ -244,7 +245,7 @@
                                     <h3 class="mb">600Mb <span>עד</span></h3>
                                     <p class="plus">+<br>Partner tv<br>כולל ממיר אחד<br>+<img src="https://www.partner.co.il/globalassets/global/privatefiber/images/logoNetflix.png" alt="" title=""></p>
                                     <p class="price"><!--99 ₪ לחודש לחודשיים הראשונים<br />-->מ-₪205 לחודש</p>
-                                    <a  class="btn" tabindex="0">
+                                    <a href="#header" class="btn" tabindex="0">
                                         <span class="text">‹  להצטרפות</span>
                                     </a>
                                 </div>
@@ -256,7 +257,7 @@
                                     <h3 class="speedtxt">Private Fiber במהירות עד</h3>
                                     <p class="mb">1<span>Gb</span></p>
                                     <p class="price">מ-120 ₪ לחודש<span>חודש ראשון ללא תשלום</span></p>
-                                    <a  class="btn" >
+                                    <a href="#header" class="btn" tabindex="0">
                                         <span class="text">‹ להצטרפות</span>
                                     </a>
                                 </div>
@@ -266,7 +267,7 @@
                                     <p class="mb">1Gb <span>עד</span></p>
                                     <p class="plus">+<br>Partner tv<br>כולל ממיר אחד<br>+<img src="https://www.partner.co.il/globalassets/global/privatefiber/images/logoNetflix.png" alt="" title=""></p>
                                     <p class="price"><!--99 ₪ לחודש לחודשיים הראשונים<br />-->מ-₪225 לחודש</p>
-                                    <a  class="btn">
+                                    <a href="#header" class="btn" tabindex="0">
                                         <span class="text">‹ להצטרפות</span>
                                     </a>
                                 </div>
@@ -441,7 +442,8 @@
         const handleToggle = (index) =>{
             const one = document.querySelectorAll('.myPackTwo')
             const  two = document.querySelectorAll('.myPackOne')
-
+            const withNetflix = $('[name="withNetflix"]');
+            debugger
             if(one[0].style.display === "" ||one[0].style.display ==='none'){
                 one.forEach(element => {
                     element.style.display ='block'
@@ -449,6 +451,7 @@
                 two.forEach(element => {
                     element.style.display ='none'
                 });
+                withNetflix[0].value = true
             }
             else {
                  one.forEach(element => {
@@ -457,7 +460,7 @@
                 two.forEach(element => {
                     element.style.display ='block'
                 });
-               
+                withNetflix[0].value = false
             }
         }
     </script>
