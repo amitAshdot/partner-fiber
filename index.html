@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link  rel="stylesheet" type="text/css"   href="./css/index.css" > 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <!-- preload css, fonts     -->
     <!--<link 
         rel="preload"
@@ -42,7 +42,11 @@
     <!-- SLICK -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
-<script src="js/slick/slick.js" type="text/javascript"></script>
+<script defer src="js/slick/slick.js" type="text/javascript"></script>
+
+<!-- LAZY -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script> -->
+
 </head>
 
 <body>
@@ -55,8 +59,8 @@
                 <img class="top-logo" src="https://www.partner.co.il/globalassets/global/privatefiber/images/logopartner5g.png" alt="" title="" >
 
                 <img  class="top-staticWeb u-desktop" src="https://www.partner.co.il/globalassets/global/privatefiber/images/staticWeb.png" alt="סטטיק מחשב" title="אינטרנט סיבים אופטיים – אינטרנט ביתי מהיר עד 1 ג'יגה">
-                <img class="top-staticMob u-mobile" src="assets/images/top-section/staticmob.png" alt="סטטיק פלאפון" title="אינטרנט סיבים אופטיים – אינטרנט ביתי מהיר עד 1 ג'יגה" >
-                <img class="top-siv_formMob u-mobile" src="https://www.partner.co.il/globalassets/global/privatefiber/images/siv_formMob.png" alt="" title="" >
+                <img class="top-staticMob u-mobile" src="assets/images/top-section/staticmob.webp" alt="סטטיק פלאפון" title="אינטרנט סיבים אופטיים – אינטרנט ביתי מהיר עד 1 ג'יגה" width="192.273" height="438.586">
+                <img class="top-siv_formMob u-mobile" src="https://www.partner.co.il/globalassets/global/privatefiber/images/siv_formMob.png" alt="קווים" title="קווים" >
                 <p class="tnaim">בכפוף לתנאים המלאים</p>
 
                 <div class="head__text-container">
@@ -77,8 +81,8 @@
             </div>
             </div>
         <!-- end absulote img -->    
-            <img class="top-bgMainWeb u-desktop" src="https://www.partner.co.il/globalassets/global/privatefiber/images/bgHeaderWeb.jpg" alt="" title="" >
-            <img class="top-bgMainMob u-mobile" src="https://www.partner.co.il/globalassets/global/privatefiber/images/bgHeaderMob.jpg" alt="" title="" >
+            <img class="top-bgMainWeb u-desktop" src="https://www.partner.co.il/globalassets/global/privatefiber/images/bgHeaderWeb.jpg" alt="רקע דסקטופ" title="רקע דסקטופ" >
+            <img class="top-bgMainMob u-mobile" src="https://www.partner.co.il/globalassets/global/privatefiber/images/bgHeaderMob.jpg" alt="רקע" title="רקע"  width="414" height="456.461" >
     </header>
     <!-- TOP SECTION END-->
 <!-- FORM START -->
@@ -155,7 +159,7 @@
             <h2 class="pros-title">חוויה בעוצמה שלא הכרתם</h2>
 
             <div class="pros-row">
-                <div class="pros-img-container" ><img src="https://www.partner.co.il/globalassets/global/privatefiber/images/havaya_1.png" alt="גלישה במהירות עוצמתית גם בשעות עומס" title=""></div>
+                <div class="pros-img-container first-image" ><img class="lazyload" src="https://www.partner.co.il/globalassets/global/privatefiber/images/havaya_1.png" alt="גלישה במהירות עוצמתית גם בשעות עומס" title=""></div>
                 <div>
                     <h3 class="pros-row-title">מי שגולש לבד, נהנה יותר</h3>
                     <p>לגלוש במהירות עוצמתית גם בשעות העומס כשכל השכנים גולשים באותו זמן. עם הסיב הפרטי שמחובר ממש עד הדירה.</p>
@@ -163,7 +167,7 @@
             </div>
 
             <div class="pros-row reverse">
-                <div class="pros-img-container"><img src="https://www.partner.co.il/globalassets/global/privatefiber/images/havaya_2.png" alt="לעבוד מהבית עם אינטרנט איכותי ועוצמתי" title=""></div>
+                <div class="pros-img-container"><img class="lazyload" src="https://www.partner.co.il/globalassets/global/privatefiber/images/havaya_2.png" alt="לעבוד מהבית עם אינטרנט איכותי ועוצמתי" title=""></div>
                 <div>
                     <h3 class="pros-row-title">אינטרנט שנותן עבודה</h3>
                     <p>עם Private Fiber אפשר להמשיך לעבוד גם מהבית. עם אינטרנט איכותי ועוצמתי.</p>
@@ -171,7 +175,7 @@
             </div>
 
             <div class="pros-row">
-                <div class="pros-img-container"><img src="https://www.partner.co.il/globalassets/global/privatefiber/images/havaya_3.png" alt="אינטרנט מהיר סיבים אופטיים לחוויית גיימינג אולטימטיבית" title=""></div>
+                <div class="pros-img-container"><img class="lazyload" src="https://www.partner.co.il/globalassets/global/privatefiber/images/havaya_3.png" alt="אינטרנט מהיר סיבים אופטיים לחוויית גיימינג אולטימטיבית" title=""></div>
                 <div>
                     <h3 class="pros-row-title">לנצח את כולם ובגדול</h3>
                     <p>רוצים לשחק במשחקי אונליין עם חווית גיימינג פורצת גבולות? מעכשיו תרגישו בינלאומיים, תקשורת בסיב של פרטנר תטיס את הגלישה ותנצח את כל השחקנים האחרים.</p>
@@ -180,11 +184,11 @@
 
         </div>
 
-        <img src="https://www.partner.co.il/globalassets/global/privatefiber/images/sivweb.png" alt="" title="" class="pros-floatImg pros-floatImg-top">
-        <img src="https://www.partner.co.il/globalassets/global/privatefiber/images/siv_sofaBottom_1.png" alt="" title="" class="pros-floatImg pros-floatImg-bottom-R">
-        <img src="https://www.partner.co.il/globalassets/global/privatefiber/images/siv_sofaBottom_2.png" alt="" title="" class="pros-floatImg pros-floatImg-bottom-L">
-        <img src="https://www.partner.co.il/globalassets/global/privatefiber/images/siv_sofaBottomMob.png" alt="" title="" class="pros-floatImg pros-floatImg- u-mobile">
-        <img src="https://www.partner.co.il/globalassets/global/privatefiber/images/staticSofa.png" alt="חבילות אינטרנט סיבים אופטיים למהירות שיא" title="" class="pros-floatImg pros-floatImg-staticSofa">
+        <img src="https://www.partner.co.il/globalassets/global/privatefiber/images/sivweb.png" alt="" title="" class="pros-floatImg pros-floatImg-top lazyload">
+        <img src="https://www.partner.co.il/globalassets/global/privatefiber/images/siv_sofaBottom_1.png" alt="" title="" class="pros-floatImg pros-floatImg-bottom-R u-desktop lazyload">
+        <img src="https://www.partner.co.il/globalassets/global/privatefiber/images/siv_sofaBottom_2.png" alt="" title="" class="pros-floatImg pros-floatImg-bottom-L u-desktop lazyload">
+        <img src="https://www.partner.co.il/globalassets/global/privatefiber/images/siv_sofaBottomMob.png" alt="" title="" class="pros-floatImg pros-floatImg-sofa u-mobile lazyload">
+        <img src="https://www.partner.co.il/globalassets/global/privatefiber/images/staticSofa.png" alt="חבילות אינטרנט סיבים אופטיים למהירות שיא" title="" class="pros-floatImg pros-floatImg-staticSofa lazyload">
 
     </section>
     <!-- JOIN-US SECTION END-->
@@ -222,7 +226,7 @@
                                 <div class="myPackTwo" style="display: none;">
                                     <h3 class="speedtxt">Triple Fiber Netflix</h3>
                                     <h3 class="mb">300Mb <span>עד</span></h3>
-                                    <p class="plus">+<br>Partner tv<br>כולל ממיר אחד<br>+<img src="https://www.partner.co.il/globalassets/global/privatefiber/images/logoNetflix.png" alt="" title=""></p>
+                                    <p class="plus">+<br>Partner tv<br>כולל ממיר אחד<br>+<img class="lazyload" src="https://www.partner.co.il/globalassets/global/privatefiber/images/logoNetflix.png" alt="" title=""></p>
                                     <p class="price"><!--99 ₪ לחודש לחודשיים הראשונים<br />-->מ-₪195 לחודש</p>
                                     <a href="#header" class="btn" tabindex="0">
                                         <span class="text">‹ להצטרפות</span>
@@ -243,7 +247,7 @@
                                 <div class="myPackTwo" style="display: none;">
                                     <h3 class="speedtxt">Triple Fiber Netflix</h3>
                                     <h3 class="mb">600Mb <span>עד</span></h3>
-                                    <p class="plus">+<br>Partner tv<br>כולל ממיר אחד<br>+<img src="https://www.partner.co.il/globalassets/global/privatefiber/images/logoNetflix.png" alt="" title=""></p>
+                                    <p class="plus">+<br>Partner tv<br>כולל ממיר אחד<br>+<img class="lazyload" src="https://www.partner.co.il/globalassets/global/privatefiber/images/logoNetflix.png" alt="" title=""></p>
                                     <p class="price"><!--99 ₪ לחודש לחודשיים הראשונים<br />-->מ-₪205 לחודש</p>
                                     <a href="#header" class="btn" tabindex="0">
                                         <span class="text">‹  להצטרפות</span>
@@ -265,7 +269,7 @@
                                 <div class="myPackTwo" style="display: none;">
                                     <h3 class="speedtxt">Triple Fiber Netflix</h3>
                                     <p class="mb">1Gb <span>עד</span></p>
-                                    <p class="plus">+<br>Partner tv<br>כולל ממיר אחד<br>+<img src="https://www.partner.co.il/globalassets/global/privatefiber/images/logoNetflix.png" alt="" title=""></p>
+                                    <p class="plus">+<br>Partner tv<br>כולל ממיר אחד<br>+<img class="lazyload" src="https://www.partner.co.il/globalassets/global/privatefiber/images/logoNetflix.png" alt="" title=""></p>
                                     <p class="price"><!--99 ₪ לחודש לחודשיים הראשונים<br />-->מ-₪225 לחודש</p>
                                     <a href="#header" class="btn" tabindex="0">
                                         <span class="text">‹ להצטרפות</span>
@@ -443,7 +447,6 @@
             const one = document.querySelectorAll('.myPackTwo')
             const  two = document.querySelectorAll('.myPackOne')
             const withNetflix = $('[name="withNetflix"]');
-            debugger
             if(one[0].style.display === "" ||one[0].style.display ==='none'){
                 one.forEach(element => {
                     element.style.display ='block'
@@ -470,8 +473,7 @@
     <script defer type="text/javascript" src="./js/tabController.js"></script>
     <script async src="/js/lazysizes.min.js" ></script>
     <script defer type="text/javascript" src="./js/formHandle.js"></script> -->
-    <script defer type="text/javascript" src="./dist/main.js"></script>
-
+    <!-- <script defer type="text/javascript" src="./dist/main.js"></script> -->
 </body>
 
 </html>

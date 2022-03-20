@@ -5,6 +5,11 @@
         flex-direction: column;
         padding-block-start: 5.5rem;
         overflow: visible;
+
+        @include respond(mini-desktop) {
+            padding-block-start: 16rem;
+            padding-block-end: 3rem;
+        }
     }
 
     &-container {
@@ -19,40 +24,85 @@
         text-align: center;
         padding-block-start: 1rem;
         padding-block-end: 4.5rem;
+
+        @include respond(mini-desktop) {
+            font-size: 5rem;
+            line-height: 100%;
+            text-align: center;
+            margin-inline: auto;
+            width: 80%;
+            margin-block-end: 4rem;
+        }
     }
 
     &-row {
         display: flex;
         align-items: center;
 
+        @include respond(mini-desktop) {
+            flex-direction: column;
+        }
+
         &>div {
             width: 50%;
             padding-inline: 2rem;
             margin-block-end: 3rem;
 
+            @include respond(mini-desktop) {
+                width: 90%;
+            }
+
             &>img {
                 width: 13.5rem;
                 margin: 0 auto;
+
+                @include respond(mini-desktop) {
+                    width: 23rem;
+
+                }
             }
         }
 
         &.reverse {
             flex-direction: row-reverse;
+
+            @include respond(mini-desktop) {
+                flex-direction: column;
+                margin-block: 5rem;
+            }
         }
 
         &-title {
             font-family: 'simpler-bold';
             font-size: 1.35rem;
+
+            @include respond(mini-desktop) {
+                font-size: 3rem;
+                text-align: center;
+            }
+
         }
 
         & p {
             font-size: 1rem;
+
+            @include respond(mini-desktop) {
+                font-size: 2.5rem;
+                text-align: center;
+            }
         }
     }
 
     &-img-container {
         display: flex;
         justify-content: center;
+
+        @include respond(mini-desktop) {
+            &.first-image {
+                margin-block-end: 10rem;
+            }
+        }
+
     }
 
     &-floatImg {
@@ -63,23 +113,31 @@
             right: 0;
             width: 42rem;
             z-index: -1;
+
+            @include respond(mini-desktop) {
+                top: 6rem;
+                right: -34px;
+                height: 60rem;
+                width: 38rem;
+                z-index: -1;
+            }
         }
 
         &-staticSofa {
-    bottom: -6.5rem;
-    right: 50%;
-    width: 44rem;
-    z-index: 1;
-    transform: translateX(50%);
+            bottom: -6.5rem;
+            right: 50%;
+            width: 44rem;
+            z-index: 1;
+            transform: translateX(50%);
         }
 
         &-bottom {
 
             &-R {
-    bottom: 1rem;
-    right: 2rem;
-    width: 43rem;
-    z-index: 1;
+                bottom: 1rem;
+                right: 2rem;
+                width: 43rem;
+                z-index: 1;
             }
 
             &-L {
@@ -89,8 +147,13 @@
             }
         }
 
-        &-wrapQues{
+        &-wrapQues {
             bottom: 1rem;
+        }
+
+        &-sofa {
+            bottom: 0;
+            left: 1rem;
         }
     }
 }
