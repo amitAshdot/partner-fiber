@@ -5,6 +5,13 @@
         border-radius: 15px;
         width: 57%;
         margin: -21.5rem auto 10rem auto;
+
+        @include respond(mini-desktop) {
+            width: 90%;
+            z-index: 2;
+            margin: -4rem auto 10rem auto;
+
+        }
     }
 
     &#top {
@@ -14,11 +21,24 @@
         width: 23rem;
         padding: 1rem 0 2rem 0;
 
+        @include respond(mini-desktop) {
+            width: 90%;
+            padding: 1rem 0 4rem 0;
+
+        }
+
         h2 {
             font-family: simpler-bolder;
             text-align: center;
             font-size: 1.5rem;
             margin-block-start: 0.5rem;
+
+            @include respond(mini-desktop) {
+                font-size: 4rem;
+                margin-block-start: 8.5rem;
+                margin-inline-end: 7rem;
+                text-align: right;
+            }
         }
 
         & input {
@@ -36,12 +56,22 @@
             &::placeholder {
                 color: black;
             }
+
+            @include respond(mini-desktop) {
+                font-size: 2.5rem;
+            }
         }
 
         & .form__bottom {
             display: flex;
             justify-content: space-between;
             margin-block-start: 0.5rem;
+
+            @include respond(mini-desktop) {
+                flex-direction: column-reverse;
+                margin-block-start: 2.5rem;
+
+            }
 
             .cta {
                 font-size: 1.2rem;
@@ -50,6 +80,12 @@
                 width: 50%;
                 text-decoration: none;
                 color: black;
+
+                @include respond(mini-desktop) {
+                    font-size: 2rem;
+                    width: 100%;
+                    text-align: center;
+                }
 
                 a:link,
                 a:visited {
@@ -82,6 +118,13 @@
                 border: 4px solid #000000;
 
                 cursor: pointer;
+
+                @include respond(mini-desktop) {
+                    width: 100%;
+                    // font-size: 2.5rem;
+                    margin-block-end: 2.5rem;
+
+                }
 
                 &::after {
                     content: '';
@@ -117,6 +160,10 @@
                     padding: 0;
                     margin: 0;
                     z-index: 2;
+
+                    @include respond(mini-desktop) {
+                        font-size: 2.5rem;
+                    }
                 }
             }
 

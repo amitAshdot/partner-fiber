@@ -13,6 +13,10 @@ margin: auto;
     }
     padding: 4% 0 4% 0;
     background: #000000;
+
+     @include respond(mini-desktop) {
+        //  font-size: 2.1111vw;
+     }
 }
 
 .accordionQues {
@@ -31,6 +35,9 @@ margin: auto;
     font-size: 2.65rem;
     font-family: 'simpler-bolder';
     /*background: #2dd5c4;*/
+     @include respond(mini-desktop) {
+         font-size: 3.8rem;
+     }
 }
 
 .wrapQues h2 span {
@@ -130,7 +137,7 @@ margin: auto;
 
     .wrapQues h2 {
         width: 90%;
-        font-size: 8em;
+        // font-size: 8em;
         /*padding: 5% 0 5% 0;*/
     }
 

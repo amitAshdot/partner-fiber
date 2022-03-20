@@ -223,7 +223,7 @@ $breakpoint argument choices
   }
 
   @if $breakpoint==mini-desktop {
-    @media only screen and(max-width: 66.875em) {
+    @media only screen and(max-width: 64em) {
       // 1070px
       @content;
     }
