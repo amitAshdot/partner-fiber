@@ -149,6 +149,10 @@
 
         &-wrapQues {
             bottom: 1rem;
+
+            @include respond(mini-desktop) {
+                display: none;
+            }
         }
 
         &-sofa {

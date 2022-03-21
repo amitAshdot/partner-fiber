@@ -2,21 +2,22 @@ hr {
     padding: 0;
     margin: 0;
     border: 1px solid #ffffff;
-width: 97%;
-margin: auto;
+    width: 97%;
+    margin: auto;
 }
 
 .wrapQues {
-    &-section{
-            position: relative;
+    &-section {
+        position: relative;
         overflow: visible;
     }
+
     padding: 4% 0 4% 0;
     background: #000000;
 
-     @include respond(mini-desktop) {
+    @include respond(mini-desktop) {
         //  font-size: 2.1111vw;
-     }
+    }
 }
 
 .accordionQues {
@@ -34,10 +35,11 @@ margin: auto;
     text-align: right;
     font-size: 2.65rem;
     font-family: 'simpler-bolder';
+
     /*background: #2dd5c4;*/
-     @include respond(mini-desktop) {
-         font-size: 3.8rem;
-     }
+    @include respond(mini-desktop) {
+        font-size: 3.8rem;
+    }
 }
 
 .wrapQues h2 span {
@@ -51,35 +53,35 @@ margin: auto;
     border: 2px solid #000000;
 }
 
- .accordionQues .quesBox {
+.accordionQues .quesBox {
     /*padding: 1em 0 1.5em 0;*/
     border: 0px solid green;
 }
 
- .accordionQues .quesBox .questions {
+.accordionQues .quesBox .questions {
     text-align: right;
     color: $color-primary;
     border: 0px solid red;
 
 
-        width: 100%;
-        display: inline-block;
-        text-decoration: none;
-        color: #2cd5c4;
-        font-family: 'simpler-bold';
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: #2cd5c4;
+    font-family: 'simpler-bold';
     font-size: 1.08rem;
     padding-inline-start: 1.5rem;
     padding-inline-end: 1.2rem;
     padding-block: 1.17rem;
-    }
+}
 
- .accordionQues .quesBox .questions img {
+.accordionQues .quesBox .questions img {
     float: left;
     width: 1.63rem;
     padding: 0 0 0 0.5rem;
 }
 
- .accordionQues .quesBox .questions a span.theQues {
+.accordionQues .quesBox .questions a span.theQues {
     width: 85%;
     margin: 0 0.5em 0 0;
     float: right;
@@ -87,13 +89,13 @@ margin: auto;
     border: 0px solid red;
 }
 
- .accordionQues .quesBox .mishpatiMore {
+.accordionQues .quesBox .mishpatiMore {
     // display: none;
     font-size: 1.1em;
     text-align: right;
     line-height: 145%;
     // padding: 0 0 2% 0;
-        padding-block-end: 0rem;
+    padding-block-end: 0rem;
     width: 98%;
     margin: 0 auto;
     color: #ffffff;
@@ -103,23 +105,23 @@ margin: auto;
     border: 0px solid red;
 }
 
- .accordionQues .quesBox .mishpatiMore p {
+.accordionQues .quesBox .mishpatiMore p {
     width: 95%;
     line-height: 125%;
 }
 
- .accordionQues .quesBox .mishpatiMore a {
+.accordionQues .quesBox .mishpatiMore a {
     color: #000000;
     text-decoration: underline;
 }
 
- .accordionQues .quesBox .mishpatiMore ul.quesList {
+.accordionQues .quesBox .mishpatiMore ul.quesList {
     width: 95%;
     list-style-type: lower-alpha;
     border: 0px solid green;
 }
 
- .accordionQues .quesBox .mishpatiMore ul.quesList li {
+.accordionQues .quesBox .mishpatiMore ul.quesList li {
     display: list-item;
 }
 
@@ -127,11 +129,11 @@ margin: auto;
 
 @media screen and (max-width: 1024px) {
 
-     .wrapQues {
+    .wrapQues {
         padding: 6% 0 15% 0;
     }
 
-     .accordionQues {
+    .accordionQues {
         width: 90%;
     }
 
@@ -141,34 +143,36 @@ margin: auto;
         /*padding: 5% 0 5% 0;*/
     }
 
-     .accordionQues .quesBox .questions {
+    .accordionQues .quesBox .questions {
         width: 99%;
+        font-size: 2.1rem;
     }
 
-     .accordionQues .quesBox .mishpatiMore {
+    .accordionQues .quesBox .mishpatiMore {
         width: 95%;
         font-size: 4em;
         text-align: justify;
         line-height: 100%;
-        padding: 0 0 2% 0;
+        padding: 0;
         border: 0px solid green;
     }
 
-     .accordionQues .quesBox .mishpatiMore p {
+    .accordionQues .quesBox .mishpatiMore p {
         line-height: 120%;
+        font-size: 2rem;
     }
 
-     .accordionQues .quesBox .questions a img {
+    .accordionQues .quesBox .questions a img {
         width: 5%;
         margin: 1% 0 0 0;
         transition: all 0.3s;
     }
 
-     .accordionQues .quesBox .questions a span.theQues {
+    .accordionQues .quesBox .questions a span.theQues {
         padding: 1% 0 0 0;
     }
 
-     .accordionQues .quesBox .mishpatiMore ul.quesList li {
+    .accordionQues .quesBox .mishpatiMore ul.quesList li {
         margin: 0 0 5% 0;
     }
 
