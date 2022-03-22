@@ -79,6 +79,10 @@ hr {
     float: left;
     width: 1.63rem;
     padding: 0 0 0 0.5rem;
+
+    @include respond(mini-desktop) {
+        width: 2.63rem;
+    }
 }
 
 .accordionQues .quesBox .questions a span.theQues {
