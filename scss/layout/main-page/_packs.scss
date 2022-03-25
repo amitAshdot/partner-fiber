@@ -358,6 +358,7 @@ input:checked+.slider:before {
             &>img {
                 width: 9.5rem;
                 margin-block-end: 0.5rem;
+                height: auto;
 
                 @include respond(mini-desktop) {
                     width: 17.5rem;

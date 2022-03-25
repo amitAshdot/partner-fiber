@@ -78,6 +78,8 @@ hr {
 .accordionQues .quesBox .questions img {
     float: left;
     width: 1.63rem;
+    height: auto;
+
     padding: 0 0 0 0.5rem;
 
     @include respond(mini-desktop) {
@@ -168,6 +170,8 @@ hr {
 
     .accordionQues .quesBox .questions a img {
         width: 5%;
+        height: auto;
+
         margin: 1% 0 0 0;
         transition: all 0.3s;
     }

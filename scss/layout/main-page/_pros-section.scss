@@ -55,6 +55,7 @@
             &>img {
                 width: 13.5rem;
                 margin: 0 auto;
+                height: auto;
 
                 @include respond(mini-desktop) {
                     width: 23rem;
@@ -112,6 +113,8 @@
             top: 4.1rem;
             right: 0;
             width: 42rem;
+            height: auto;
+
             z-index: -1;
 
             @include respond(mini-desktop) {
@@ -127,6 +130,8 @@
             bottom: -6.5rem;
             right: 50%;
             width: 44rem;
+            height: auto;
+
             z-index: 1;
             transform: translateX(50%);
         }
@@ -137,10 +142,14 @@
                 bottom: 1rem;
                 right: 2rem;
                 width: 43rem;
+                height: auto;
+
                 z-index: 1;
             }
 
             &-L {
+                height: auto;
+
                 bottom: -6rem;
                 left: 0;
                 z-index: 1;
@@ -149,6 +158,7 @@
 
         &-wrapQues {
             bottom: 1rem;
+            height: auto;
 
             @include respond(mini-desktop) {
                 display: none;
@@ -158,6 +168,8 @@
         &-sofa {
             bottom: 0;
             left: 1rem;
+            height: auto;
+
         }
     }
 }
